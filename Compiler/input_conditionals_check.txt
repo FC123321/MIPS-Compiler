@@ -1,0 +1,23 @@
+REGISTERS
+R1 16
+R2 42
+R3 42
+R5 2
+MEMORY
+8 40
+16 60
+CODE
+       ADDI R4, R4, 1
+       BEQ R1, R2, EQ1
+       BNE R1, R2, NEQ1
+EQ1:   SW R4, 52
+       BEQ R1, R1, NEXT
+NEQ1:  SW R5, 52
+       BEQ R1, R1, NEXT
+NEXT:  BEQ R3, R2, EQ2
+       BNE R3, R2, NEQ2
+EQ2:   SW R4, 56
+       BEQ R1, R1, NEXT2
+NEQ2:  SW R5, 56
+       BEQ R1, R1, NEXT2
+NEXT2: SW R4, 24

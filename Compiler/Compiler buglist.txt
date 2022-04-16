@@ -1,0 +1,10 @@
+A larger variety of addressing modes?				
+	Register addressing
+	Base addressing
+	Register indirect
+	Displacement
+	Indexed
+	Indirect addressing
+	Direct/Absolute addressing
+	Immediate addressing
+	PC-relative addressing
